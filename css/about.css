@@ -1,0 +1,256 @@
+style{
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap')
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+
+  body{ 
+      background-image: url(../media/images/background.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+    }
+       
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.VGB-6{
+    height: 80px;
+}
+
+.VGB-7{
+   height: 80px;
+}
+
+.VGB-10{
+    height: 150px;
+}
+
+.light-green{
+    color: darkturquoise;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: limegreen;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+
+
+.VGB-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.VGB-1 h2{
+    font-size: 54px;
+}
+
+.VGB-1 h3{
+    font-size: 30px;
+    color: darkgreen;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.VGB-1 p{
+    font-size: 16px;
+    color: black;
+    font-weight: 100;
+}
+
+.VGB-1 p{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: forestgreen;
+    background: linear-gradient( to left, limegreen, lightgreen);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img{
+    width: 30px;
+    display: none;
+}
+
+.color-text{
+    color: black;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.VGB-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(limegreen, lightgreen);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.VGB-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.VGB-2 .book{
+    width: 40%;
+    height: 50%;
+}
+
+ .color-box{ 
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(limegreen, lightgreen, whitesmoke);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.VGB-3{
+    color: whitesmoke;
+}
+
+.wrapper-main{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.VGB-8{
+    height: 30px;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 600px) {
+    .container {
+        padding: 4%; /* Increase the padding for better spacing on small screens */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .logo, .menu-icon {
+        width: 100%; /* Make these elements take full width */
+        text-align: center; /* Center-align text within elements */
+        margin: 10px 0; /* Add spacing between elements */
+    }
+
+    nav {
+        text-align: center; /* Center-align navigation links */
+        margin-top: 20px; /* Add spacing at the top */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Increase the vertical spacing between menu items */
+    }
+
+    .row {
+        flex-direction: column; /* Stack elements vertically */
+        margin: 30px 0; /* Add more spacing between elements */
+    }
+
+    .VGB-1, .VGB-2 {
+        flex-basis: 100%; /* Make these sections take full width */
+        margin: 0; /* Remove left margin */
+    }
+
+    .VGB-2 .book, .color-box, .VGB-1::after {
+        display: none; /* Hide these elements on mobile screens */
+    }
+
+    .VGB-3 {
+        color: black; /* Change text color to black for better visibility */
+    }
+
+    .VGB-6{
+        height: 160px;
+    }
+    
+    .VGB-7{
+       height: 120px;
+    }
+
+    .VGB-8{
+        height: 50px;
+    }
+
+
+
+
+
+}
+
